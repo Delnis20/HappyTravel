@@ -1,0 +1,64 @@
+html{
+    font-size: 16px;
+
+}
+
+.social-bar{
+
+    position:fixed; /*para que quede fijo en la pantalla*/
+    height:250px; /*posicionar a la derecha de la pantalla*/
+    top: 35%; /*casi en el centro*/
+    font-size: 1.5rem;/*aumentar el tamaño de la fuente*/
+    display: flex;
+    flex-direction: column;/*para poner en columna*/
+    align-items:flex-start;/*alinear a la parte inferior*/
+    z-index:100; /*barra social encima del resto de los elementos*/
+ 
+
+}
+.icon{
+   
+    color: white;
+    text-decoration: none;
+    padding: 0.7rem;
+    display: flex;
+    transition: all .5s;/*forma de animar los cambios a todos all*/
+    /*es para redondear la barra*/
+    border-radius:50%;
+    float: left;
+}
+.icon-facebook{
+    background: #2E406E;
+}
+.icon-twitter{
+    background: #339DC5;
+}
+.icon-youtube{
+    background: #E83028;
+   
+    
+}
+.icon-instagram{
+    background: #3F60A5;
+}
+.icon-mail{
+    background: skyblue;
+
+}
+.icon-whatsapp{
+background:green;
+}
+/* esto es para el inicio y el final sea redondeado o una parte de sea boleado
+.icon:first-child{
+    
+    border-radius: 0 1rem 0 0;
+}
+.icon:last-child{
+    border-radius: 50%;
+    border-radius: 0 0 1rem 0 ;
+}*/
+.icon:hover{
+    padding-left: 3rem; 
+    border-radius: 0 1rem 1rem 0;
+    box-shadow: 0 0 .5rem rgba(0,0,0,0.42)
+}
